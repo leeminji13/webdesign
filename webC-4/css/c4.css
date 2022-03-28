@@ -1,0 +1,126 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #333333;}
+
+.slide li{
+    line-height: 0;
+}
+.slide img{
+    width: 100%;
+}
+
+.w100{width: 100%;}
+.w-100{width: 100px;}
+.w-200{width: 200px;}
+.w-300{width: 300px;}
+.w-600{width: 600px;}
+.w-800{width: 800px;}
+.w-1000{width: 1000px;}
+
+.h100{height: 100%;}
+.h-100{height: 100px;}
+.h-200{height: 200px;}
+.h-350{height: 350px;}
+.h-650{height: 650px;}
+
+.p-rel{position: relative;}
+.p-abs{position: absolute;}
+
+.d-flex{display: flex;}
+.d-none{display: none;}
+.fdc{flex-direction: column;}
+.justify-be{justify-content: space-between;}
+.justify-c{justify-content: center;}
+.align-c{align-items: center;}
+.text-c{text-align: center;}
+.ofh{overflow: hidden;}
+.bb{border-bottom: 1px solid rgb(255, 135, 155);}
+
+.left{
+    background-color: beige;
+}
+.d1li{
+    position: relative;
+    border-top: 1px solid rgb(255, 135, 155);
+}
+.d1a{
+    line-height: 3;
+    font-size: 18px;
+}
+.d2ul{
+    position: absolute;
+    top: -20px;
+    left: 100%;
+    width: 150px;
+    
+    visibility: hidden;
+    line-height: 2;
+}
+.d1li:hover{
+    background-color: pink;
+}
+.d1li:hover .d2ul{
+    visibility: visible;
+    background-color: pink;
+    transition: 1s;
+}
+.d2ul li:hover{
+    background-color: white;
+}
+.tab > div{
+    width: 33.33%;
+}
+.notice li{
+    display: flex;
+    align-items: center;
+    line-height: 2;
+}
+.notice li a{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+}
+.gallery ul img{
+    width: 90%;
+    padding-top: 25px;
+}
+#modal{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 101;
+}
+#modal p.sub{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#modal p{
+    text-align: center;
+}
+#modal button{
+    float: right;
+    margin: 10px;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333333;
+    opacity: 0.5;
+    z-index: 100;
+    display: none;
+}
+.bg.show{
+    display: block;
+}
+.gallery img:hover{
+    opacity: 80%;
+}

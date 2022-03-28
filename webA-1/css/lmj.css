@@ -1,0 +1,122 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #333333;}
+
+.bg{background-color: #ffffff;}
+
+.p-rel{position: relative;}
+.p-abs{position: absolute;}
+
+.d-flex{display: flex;}
+.d-block{display: block;}
+.d-none{display: none;}
+.ofh{overflow: hidden;}
+
+.container{width: 1200px; margin: 0 auto;}
+.w-100{width: 100%;}
+.h-100{height: 100px;}
+.h-200{height: 200px;}
+.h-300{height: 300px;}
+
+.justify-be{justify-content: space-between;}
+.justify-c{justify-content: center;}
+.align-c{align-items: center;}
+.fdc{flex-direction: column;}
+
+#slider{
+    line-height: 0;
+}
+
+.d1a{
+    line-height: 3;
+    padding: 0 30px;
+    text-align: center;
+}
+.d1li{position: relative;}
+.d2ul{
+    position: absolute;
+    text-align: center;
+    height: 0;
+    line-height: 2;
+    overflow: hidden;
+    top: 100;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: beige;
+    transition: height 0.5s;
+}
+#gnb:hover .d2ul{
+    height: 150px;
+   
+}
+.d1li:hover{
+    background-color: #333333;
+}
+.d1li:hover .d1a{
+    color: white;
+}
+.d2ul > li:hover{
+    background-color: #333333;
+}
+.d2ul > li:hover a{
+    color: white;
+}
+#tabbox > div{
+    width: 33.33%;
+}
+.notice li{
+    display: flex;
+    line-height: 2;
+}
+.notice li a{
+    text-overflow: ellipsis;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.notice,
+.gallery{
+    padding-top: 20px;
+}
+.tab .p-abs{
+    display: none;
+    left: 0;
+}
+.tab > div{
+    width: 33.33%;
+}
+.tab > div.on h3{
+    background-color:#333333;
+    color: white;
+}
+.tab > div.on .p-abs{
+    display: flex;
+}
+.tab h3{
+    cursor: pointer;
+}
+.gallery .p-abs{
+    width: 33.33%;
+}
+.gallery .p-abs > img{
+    width: 120px;
+    padding: 0 5px;
+}
+
+#modal{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+
+}
+.gallery img{
+    width: 120px;
+}
+

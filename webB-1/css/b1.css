@@ -1,0 +1,133 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #333333; }
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.p-abs{position: absolute;}
+.p-rel{position: relative}
+
+.d-flex{display: flex;}
+.d-none{display: none;}
+.fdc{flex-direction: column;}
+
+.justify-be{justify-content: space-between;}
+.align-c{align-items: center;}
+.justify-c{justify-content: center;}
+.text-c{text-align: center;}
+
+
+
+.w-100{width: 100%;}
+.h-100{height: 100px;}
+.h-200{height: 200px;}
+.h-300{height: 300px;}
+
+#hd{
+    background-color: antiquewhite;
+}
+#gnb{
+    margin-right: 20px;
+}
+.d1li{
+    padding: 0 20px;
+    position: relative;
+    line-height: 40px;
+}
+.d1li a{
+    font-size: 18px;
+}
+.d2ul{
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: skyblue;
+    text-align: center;
+}
+#gnb:hover .d2ul{
+    height: 120px;
+}
+.d1li:hover{
+    background-color: white;
+}
+.d2ul li:hover{
+    background-color: white;
+}
+
+#slide ul{
+    width: 10000000px;
+}
+#slide{
+    overflow: hidden;
+}
+#tab > div{
+    width: 33.33%;
+}
+#tab .p-abs{
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+#tab h3{
+    padding-right:10px;
+    line-height: 40px;
+}
+.notice .p-abs li{
+    display: flex;
+    line-height: 2;
+}
+.notice .p-abs li p{
+    width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+   
+.gallery img{
+    width: 120px;
+}
+#tab h3{
+    cursor: pointer;
+}
+#tab .p-abs{
+    display: none;
+    padding-top: 20px;
+}
+#tab div.on h3{
+    background-color: antiquewhite;
+}
+
+#tab div.on .p-abs{
+    display: flex;
+}
+#ft{
+    background-color: antiquewhite;
+}
+#ft .wrap{
+    width: 80%;
+}
+#ft .wrap li,
+#ft .wrap p{
+    padding: 10px 0;
+}
+#modal{
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+#trigger{
+    cursor: pointer;
+}
